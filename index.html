@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Resort Page</title>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./reserve.html">Reserve</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+    
+             <li style="float:right"> 
+                <select name="menu" class="menu" onchange="menu(this.value)">
+                <option value="default">Menu</option>
+                <option value="index">Home</option>
+                <option value="reserve">Reserve</option>
+                <option value="contact">Contact Us</option>
+                </select>
+                
+            </li>
+          </ul>
+    </nav>
+</head>
+
+<style>
+      #prices {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  table, tr, td {
+      border: 2px solid black;
+  }
+  
+  td {
+      padding: 5px;
+  }
+</style>
+
+<body>
+    <h1>Welcome to Paradise Resort!</h1>
+
+<!-- Slideshow container -->
+ <div class="slideshow-container"> 
+
+    <!-- images  -->
+    <div class="mySlides fade">
+      <img src="./css/img1.jpg" alt="no picture" style="width:60%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./css/img2.jpg" style="width:60%">
+    </div>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div> -->
+
+<br>
+<br>
+
+    
+    <!--Prices listed in table format per room -->
+
+    <table id="prices">
+        <tr>
+            <td>1 Bedroom/ 1 Bathroom</td>
+            <td>$349 per Night</td>
+        </tr>
+        <tr>
+            <td>2 Bedroom/ 1 Bathroom</td>
+            <td>$470 per Night</td>
+        </tr>
+        <tr>
+            <td>2 Bedroom/ 2 Bathroom</td>
+            <td>$760 per Night</td>
+        </tr>
+        <tr>
+            <td>Honeymoon Suite</td>
+            <td>$1000 per Night</td>
+        </tr>
+     </table>
+</body>
+</html>
